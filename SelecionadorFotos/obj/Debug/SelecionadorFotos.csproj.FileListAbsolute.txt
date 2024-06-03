@@ -1,0 +1,10 @@
+C:\Users\User\Documents\GitHub\Projeto-selecao\SelecionadorFotos\bin\Debug\SelecionadorFotos.exe.config
+C:\Users\User\Documents\GitHub\Projeto-selecao\SelecionadorFotos\bin\Debug\SelecionadorFotos.exe
+C:\Users\User\Documents\GitHub\Projeto-selecao\SelecionadorFotos\bin\Debug\SelecionadorFotos.pdb
+C:\Users\User\Documents\GitHub\Projeto-selecao\SelecionadorFotos\obj\Debug\SelecionadorFotos.csproj.AssemblyReference.cache
+C:\Users\User\Documents\GitHub\Projeto-selecao\SelecionadorFotos\obj\Debug\SelecionadorFotos.FotoPicker.resources
+C:\Users\User\Documents\GitHub\Projeto-selecao\SelecionadorFotos\obj\Debug\SelecionadorFotos.Properties.Resources.resources
+C:\Users\User\Documents\GitHub\Projeto-selecao\SelecionadorFotos\obj\Debug\SelecionadorFotos.csproj.GenerateResource.cache
+C:\Users\User\Documents\GitHub\Projeto-selecao\SelecionadorFotos\obj\Debug\SelecionadorFotos.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\Projeto-selecao\SelecionadorFotos\obj\Debug\SelecionadorFotos.exe
+C:\Users\User\Documents\GitHub\Projeto-selecao\SelecionadorFotos\obj\Debug\SelecionadorFotos.pdb

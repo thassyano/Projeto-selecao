@@ -7,14 +7,53 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace SelecionadorFotos
 {
-    public partial class Form1 : Form
+    public partial class FotoPicker : Form
     {
-        public Form1()
+        public FotoPicker()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FotoPicker_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBox_Arquivos_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_SelectPath_Click(object sender, EventArgs e)
+        {
+            FolderBrowserDialog folderBrowserDialog1 = new FolderBrowserDialog();
+
+            folderBrowserDialog1.Description = "Selecione uma pasta";
+            folderBrowserDialog1.RootFolder = Environment.SpecialFolder.MyComputer;
+
+            if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
+            {
+                txtBox_Path.Text = folderBrowserDialog1.SelectedPath;
+            }
+        }
+
+        private void txtBox_Path_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
