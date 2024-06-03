@@ -45,7 +45,7 @@
             this.lbl_Files.Size = new System.Drawing.Size(284, 20);
             this.lbl_Files.TabIndex = 0;
             this.lbl_Files.Text = "Cole abaixo o texto copiado do Foto go:";
-            this.lbl_Files.Click += new System.EventHandler(this.label1_Click);
+            this.lbl_Files.Click += new System.EventHandler(this.lbl_Files_Click);
             // 
             // txtBox_Arquivos
             // 
@@ -66,15 +66,14 @@
             this.lbl_TextPath.Size = new System.Drawing.Size(137, 16);
             this.lbl_TextPath.TabIndex = 2;
             this.lbl_TextPath.Text = "Selecione a pasta:";
-            this.lbl_TextPath.Click += new System.EventHandler(this.label2_Click);
+            this.lbl_TextPath.Click += new System.EventHandler(this.TextPath_Click);
             // 
             // txtBox_Path
             // 
             this.txtBox_Path.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBox_Path.Location = new System.Drawing.Point(15, 29);
-            this.txtBox_Path.Multiline = true;
             this.txtBox_Path.Name = "txtBox_Path";
-            this.txtBox_Path.Size = new System.Drawing.Size(249, 23);
+            this.txtBox_Path.Size = new System.Drawing.Size(249, 20);
             this.txtBox_Path.TabIndex = 3;
             this.txtBox_Path.TextChanged += new System.EventHandler(this.txtBox_Path_TextChanged);
             // 
@@ -83,7 +82,7 @@
             this.btn_SelectPath.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_SelectPath.Location = new System.Drawing.Point(270, 29);
             this.btn_SelectPath.Name = "btn_SelectPath";
-            this.btn_SelectPath.Size = new System.Drawing.Size(75, 23);
+            this.btn_SelectPath.Size = new System.Drawing.Size(75, 20);
             this.btn_SelectPath.TabIndex = 4;
             this.btn_SelectPath.Text = "Procurar";
             this.btn_SelectPath.UseVisualStyleBackColor = true;

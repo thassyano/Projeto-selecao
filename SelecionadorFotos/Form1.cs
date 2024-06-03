@@ -13,29 +13,10 @@ namespace SelecionadorFotos
 {
     public partial class FotoPicker : Form
     {
+        string Path;
         public FotoPicker()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FotoPicker_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtBox_Arquivos_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btn_SelectPath_Click(object sender, EventArgs e)
@@ -52,6 +33,26 @@ namespace SelecionadorFotos
         }
 
         private void txtBox_Path_TextChanged(object sender, EventArgs e)
+        {
+            Path = txtBox_Path.Text;
+
+        }
+        private void lbl_Files_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FotoPicker_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBox_Arquivos_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TextPath_Click(object sender, EventArgs e)
         {
 
         }
