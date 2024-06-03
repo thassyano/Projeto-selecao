@@ -34,6 +34,7 @@
             this.lbl_TextPath = new System.Windows.Forms.Label();
             this.txtBox_Path = new System.Windows.Forms.TextBox();
             this.btn_SelectPath = new System.Windows.Forms.Button();
+            this.btn_Consultar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbl_Files
@@ -88,11 +89,23 @@
             this.btn_SelectPath.UseVisualStyleBackColor = true;
             this.btn_SelectPath.Click += new System.EventHandler(this.btn_SelectPath_Click);
             // 
+            // btn_Consultar
+            // 
+            this.btn_Consultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Consultar.Location = new System.Drawing.Point(302, 95);
+            this.btn_Consultar.Name = "btn_Consultar";
+            this.btn_Consultar.Size = new System.Drawing.Size(96, 20);
+            this.btn_Consultar.TabIndex = 5;
+            this.btn_Consultar.Text = "Selecionar Fotos";
+            this.btn_Consultar.UseVisualStyleBackColor = true;
+            this.btn_Consultar.Click += new System.EventHandler(this.btnConsultar_Click);
+            // 
             // FotoPicker
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(933, 468);
+            this.Controls.Add(this.btn_Consultar);
             this.Controls.Add(this.btn_SelectPath);
             this.Controls.Add(this.txtBox_Path);
             this.Controls.Add(this.lbl_TextPath);
@@ -116,6 +129,7 @@
         private System.Windows.Forms.Label lbl_TextPath;
         private System.Windows.Forms.TextBox txtBox_Path;
         private System.Windows.Forms.Button btn_SelectPath;
+        private System.Windows.Forms.Button btn_Consultar;
     }
 }
 

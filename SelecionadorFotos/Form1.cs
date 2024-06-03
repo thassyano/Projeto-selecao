@@ -1,19 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
+using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace SelecionadorFotos
 {
     public partial class FotoPicker : Form
     {
-        string Path;
+        string _path;
         public FotoPicker()
         {
             InitializeComponent();
@@ -34,7 +29,7 @@ namespace SelecionadorFotos
 
         private void txtBox_Path_TextChanged(object sender, EventArgs e)
         {
-            Path = txtBox_Path.Text;
+            _path = txtBox_Path.Text;
 
         }
         private void lbl_Files_Click(object sender, EventArgs e)
@@ -56,5 +51,52 @@ namespace SelecionadorFotos
         {
 
         }
+
+        private void btnConsultar_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(txtBox_Arquivos.Text))
+            {
+                string[] arquivosFiltrados = txtBox_Arquivos.Text
+                    .Split(new[] { " OR " }, StringSplitOptions.RemoveEmptyEntries);
+
+                if (arquivosFiltrados.Length == 0)
+                {
+                    MessageBox.Show("Insira pelo menos um nome de arquivo no formato especificado.");
+                    return;
+                }
+
+                List<string> arquivosSelecionados = new List<string>();
+
+                foreach (string nomeArquivo in arquivosFiltrados)
+                {
+                    string caminhoCompleto = _path + "/" + nomeArquivo.Replace("\"", "").Trim(); 
+                    if (File.Exists(caminhoCompleto)) 
+                    {
+                        arquivosSelecionados.Add(caminhoCompleto); 
+                    }
+                    else
+                    {
+                        MessageBox.Show($"O arquivo \"{nomeArquivo}\" não foi encontrado.");
+                    }
+                }
+
+                if (arquivosSelecionados.Any())
+                {
+                    foreach (string arquivo in arquivosSelecionados)
+                    {
+                        MessageBox.Show(arquivo);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Nenhum arquivo correspondente aos nomes especificados foi encontrado.");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Insira pelo menos um nome de arquivo no formato especificado.");
+            }
+        }
+
     }
 }
